@@ -4,100 +4,164 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>KarmaFi Token - India's First Cheapest Meme Coin</title>
-  <link rel="icon" href="logo.png" type="image/png"/>
+  <link rel="icon" href="trishul-logo.png" type="image/png"/>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #0d1117;
-      color: #f0f0f0;
+      background: linear-gradient(to bottom, #fffbd6, #ffffff);
+      color: #222;
       margin: 0;
       padding: 0;
       text-align: center;
     }
+
     header {
-      background-color: #161b22;
+      background-color: #fff200;
       padding: 1rem 0;
     }
+
     header img {
-      height: 60px;
+      height: 180px;
+      max-width: 90%;
     }
+
     h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
       margin-top: 1rem;
-      color: #58a6ff;
+      color: #e53935;
     }
+
+    .countdown-box {
+      margin-top: 1.5rem;
+      padding: 1rem;
+      background-color: #fff200;
+      color: #d50000;
+      border-radius: 10px;
+      display: inline-block;
+      font-size: 1.8rem;
+      font-weight: bold;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 10px #ffcc00; }
+      50% { box-shadow: 0 0 20px #ff6f00; }
+      100% { box-shadow: 0 0 10px #ffcc00; }
+    }
+
     .hero-image {
       width: 100%;
-      max-width: 600px;
+      max-width: 700px;
       margin: 1rem auto;
       display: block;
+      border-radius: 12px;
     }
+
     .about {
       margin: 2rem auto;
-      max-width: 700px;
-      padding: 0 1rem;
-      font-size: 1.1rem;
-      line-height: 1.6;
-      background-color: #21262d;
+      max-width: 800px;
+      font-size: 1.2rem;
+      background-color: #ffffe0;
+      border: 2px solid #ffeb3b;
       border-radius: 10px;
-      padding: 20px;
+      padding: 25px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
+
     .about h2 {
-      color: #58a6ff;
+      color: #e91e63;
     }
+
     .links {
       margin: 2rem 0;
     }
+
     .links a {
       display: inline-block;
       margin: 0.5rem;
       padding: 0.75rem 1.5rem;
-      background-color: #238636;
+      background-color: #ff9800;
       color: #fff;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 6px;
       font-weight: bold;
     }
+
     .links a:hover {
-      background-color: #2ea043;
+      background-color: #f57c00;
     }
+
     footer {
-      margin-top: 2rem;
-      font-size: 0.9rem;
-      color: #8b949e;
+      margin-top: 3rem;
+      font-size: 0.95rem;
+      color: #777;
+      background: #fffde7;
+      padding: 1rem;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="logo.png" alt="KarmaFi Logo" />
+    <!-- Logo -->
+    <img src="trishul-logo.png" alt="KarmaFi Logo" />
   </header>
 
   <h1>KarmaFi Token</h1>
-  <img src="hero-image.png" alt="Hero Image" class="hero-image"/>
 
+  <!-- Countdown -->
+  <div class="countdown-box">
+    <h2 id="countdown">⏳ Launching in: calculating...</h2>
+  </div>
+
+  <!-- Banner (Optional) -->
+  <img src="hero-image.png" alt="KarmaFi Banner" class="hero-image"/>
+
+  <!-- About Section -->
   <div class="about">
     <h2>About KarmaFi</h2>
     <p>
-      KarmaFi is a decentralized meme token designed to empower communities and reward positivity. It’s India’s first and most affordable cryptocurrency, created to give everyone access to the future of finance.
+      KarmaFi is India’s first cheapest meme-based cryptocurrency, powered by community trust and divine inspiration.  
+      Join the Karma revolution and be part of something truly spiritual and global.
     </p>
-    <p>
-      Our vision is to make crypto simple, fair, and globally accessible. KarmaFi combines fun, community, and impact in one digital asset.
-    </p>
-    <p><strong>India's first cheapest community-driven cryptocurrency.</strong></p>
+    <p><strong>Affordable • Desi • Global Impact</strong></p>
   </div>
 
+  <!-- Links -->
   <div class="links">
     <a href="https://www.instagram.com/karmafitoken" target="_blank">Instagram</a>
     <a href="https://t.me/boost?c=2856252981" target="_blank">Telegram</a>
+    <a href="https://pancakeswap.finance" target="_blank">Buy on PancakeSwap</a>
     <a href="#">Whitepaper (Coming Soon)</a>
-    <a href="#">Buy on PancakeSwap (Coming Soon)</a>
   </div>
 
+  <!-- Footer -->
   <footer>
-    &copy; 2025 KarmaFi. All rights reserved.
+    &copy; 2025 KarmaFi. All rights reserved. | Powered by Community 🌍
   </footer>
+
+  <!-- Countdown Timer Script -->
+  <script>
+    const launchDate = new Date("July 11, 2025 11:00:00").getTime();
+    const countdownEl = document.getElementById("countdown");
+
+    const interval = setInterval(() => {
+      const now = new Date().getTime();
+      const diff = launchDate - now;
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      countdownEl.innerHTML = ⏳ Launching in: ${days}d ${hours}h ${minutes}m ${seconds}s;
+
+      if (diff < 0) {
+        clearInterval(interval);
+        countdownEl.innerHTML = "🔥 KarmaFi is now LIVE!";
+      }
+    }, 1000);
+  </script>
 
 </body>
 </html>
