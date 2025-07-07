@@ -1,167 +1,123 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>KarmaFi Token - India's First Cheapest Meme Coin</title>
-  <link rel="icon" href="trishul-logo.png" type="image/png"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KarmaFi - Powering Your Digital Future</title>
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom, #fffbd6, #ffffff);
-      color: #222;
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #fff8dc, #fffff0);
+      color: #111;
+    }
+    header {
+      background-color: #ffcc00;
+      padding: 20px;
       text-align: center;
     }
-
-    header {
-      background-color: #fff200;
-      padding: 1rem 0;
-    }
-
     header img {
-      height: 180px;
-      max-width: 90%;
+      height: 80px;
     }
-
     h1 {
-      font-size: 3rem;
-      margin-top: 1rem;
-      color: #e53935;
+      font-size: 2.5rem;
+      margin: 10px 0;
     }
-
-    .countdown-box {
-      margin-top: 1.5rem;
-      padding: 1rem;
-      background-color: #fff200;
-      color: #d50000;
-      border-radius: 10px;
-      display: inline-block;
-      font-size: 1.8rem;
-      font-weight: bold;
-      animation: pulse 2s infinite;
-    }
-
-    @keyframes pulse {
-      0% { box-shadow: 0 0 10px #ffcc00; }
-      50% { box-shadow: 0 0 20px #ff6f00; }
-      100% { box-shadow: 0 0 10px #ffcc00; }
-    }
-
-    .hero-image {
-      width: 100%;
-      max-width: 700px;
-      margin: 1rem auto;
-      display: block;
-      border-radius: 12px;
-    }
-
-    .about {
-      margin: 2rem auto;
-      max-width: 800px;
+    .tagline {
       font-size: 1.2rem;
-      background-color: #ffffe0;
-      border: 2px solid #ffeb3b;
-      border-radius: 10px;
-      padding: 25px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      font-weight: 600;
+      color: #333;
     }
-
-    .about h2 {
-      color: #e91e63;
+    nav {
+      background: #fff3b0;
+      padding: 15px;
+      text-align: center;
     }
-
-    .links {
-      margin: 2rem 0;
-    }
-
-    .links a {
-      display: inline-block;
-      margin: 0.5rem;
-      padding: 0.75rem 1.5rem;
-      background-color: #ff9800;
-      color: #fff;
+    nav a {
+      color: #111;
+      margin: 0 20px;
       text-decoration: none;
-      border-radius: 6px;
       font-weight: bold;
     }
-
-    .links a:hover {
-      background-color: #f57c00;
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
     }
-
+    .hero img {
+      width: 90%;
+      max-width: 700px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .countdown {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-top: 30px;
+      color: #d35400;
+    }
+    .features {
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      text-align: center;
+    }
+    .features img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
     footer {
-      margin-top: 3rem;
-      font-size: 0.95rem;
-      color: #777;
-      background: #fffde7;
-      padding: 1rem;
+      background-color: #ffcc00;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 768px) {
+      .features {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 <body>
-
   <header>
-    <!-- Logo -->
-    <img src="trishul-logo.png" alt="KarmaFi Logo" />
-  </header>
-
-  <h1>KarmaFi Token</h1>
-
-  <!-- Countdown -->
-  <div class="countdown-box">
-    <h2 id="countdown">⏳ Launching in: calculating...</h2>
-  </div>
-
-  <!-- Banner (Optional) -->
-  <img src="hero-image.png" alt="KarmaFi Banner" class="hero-image"/>
-
-  <!-- About Section -->
-  <div class="about">
-    <h2>About KarmaFi</h2>
-    <p>
-      KarmaFi is India’s first cheapest meme-based cryptocurrency, powered by community trust and divine inspiration.  
-      Join the Karma revolution and be part of something truly spiritual and global.
-    </p>
-    <p><strong>Affordable • Desi • Global Impact</strong></p>
-  </div>
-
-  <!-- Links -->
-  <div class="links">
+    <img src="logo.png" alt="KarmaFi Logo">
+    <h1>KarmaFi</h1>
+    <div class="tagline">Built on Trust. Driven by Vision.</div>
+  </header>  <nav>
+    <a href="#">Home</a>
+    <a href="#">Token</a>
+    <a href="#">Whitepaper</a>
+    <a href="https://pancakeswap.finance" target="_blank">Buy on PancakeSwap</a>
     <a href="https://www.instagram.com/karmafitoken" target="_blank">Instagram</a>
     <a href="https://t.me/boost?c=2856252981" target="_blank">Telegram</a>
-    <a href="https://pancakeswap.finance" target="_blank">Buy on PancakeSwap</a>
-    <a href="#">Whitepaper (Coming Soon)</a>
-  </div>
-
-  <!-- Footer -->
-  <footer>
-    &copy; 2025 KarmaFi. All rights reserved. | Powered by Community 🌍
-  </footer>
-
-  <!-- Countdown Timer Script -->
-  <script>
-    const launchDate = new Date("July 11, 2025 11:00:00").getTime();
-    const countdownEl = document.getElementById("countdown");
-
-    const interval = setInterval(() => {
+  </nav>  <section class="hero">
+    <img src="hero-image.png" alt="KarmaFi Hero">
+    <div class="countdown" id="countdown">Loading launch timer...</div>
+  </section>  <section class="features">
+    <img src="chart1.png" alt="Growth Chart">
+    <img src="chart2.png" alt="Tokenomics Chart">
+  </section>  <footer>
+    &copy; 2025 KarmaFi. All rights reserved. <br>
+    Website created with ❤️ to empower decentralized finance.
+  </footer>  <script>
+    const countdownEl = document.getElementById('countdown');
+    const launchDate = new Date("2025-07-11T00:00:00Z").getTime();
+    const timer = setInterval(() => {
       const now = new Date().getTime();
-      const diff = launchDate - now;
+      const distance = launchDate - now;
 
-      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+      if (distance <= 0) {
+        clearInterval(timer);
+        countdownEl.innerHTML = "🚀 KarmaFi is now LIVE!";
+      } else {
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      countdownEl.innerHTML = ⏳ Launching in: ${days}d ${hours}h ${minutes}m ${seconds}s;
-
-      if (diff < 0) {
-        clearInterval(interval);
-        countdownEl.innerHTML = "🔥 KarmaFi is now LIVE!";
+        countdownEl.innerHTML = ${days}d ${hours}h ${minutes}m ${seconds}s until launch;
       }
     }, 1000);
-  </script>
-
-</body>
+  </script></body>
 </html>
