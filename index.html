@@ -2,97 +2,146 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KarmaFi | Built on Trust. Driven by Vision.</title>
-  <link rel="icon" href="trishul-logo.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <title>KarmaFi | Empowering Karma with Crypto</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
     body {
-      background: linear-gradient(135deg, #fceabb 0%, #f8b500 100%);
-      color: #1f1f1f;
-      padding: 2rem;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #fff8e1;
+      color: #333;
+    }
+    header {
+      background-color: #ffcc00;
+      padding: 20px;
       text-align: center;
     }
     header img {
-      width: 150px;
-      margin-bottom: 1rem;
+      max-height: 80px;
     }
     h1 {
-      font-size: 2.8rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
+      margin-top: 10px;
+      font-size: 2rem;
     }
-    p.tagline {
+    .tagline {
       font-size: 1.2rem;
-      margin-bottom: 2rem;
-      color: #444;
+      margin-bottom: 10px;
+      color: #555;
     }
     nav {
-      margin-bottom: 2rem;
+      background-color: #fff3cd;
+      padding: 10px;
+      text-align: center;
     }
     nav a {
-      margin: 0 1rem;
-      color: #1f1f1f;
+      margin: 0 15px;
       text-decoration: none;
+      color: #333;
       font-weight: 600;
     }
-    .timer {
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .countdown {
       font-size: 1.5rem;
-      background: #fff;
+      color: #d32f2f;
+      margin: 20px 0;
+    }
+    .vision {
+      background: #fff3cd;
+      padding: 30px;
+      margin: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .vision h2 {
+      color: #d32f2f;
+      text-align: center;
+    }
+    .vision p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-top: 20px;
+    }
+    .buttons {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .buttons a {
+      display: inline-block;
+      background: #ffcc00;
       color: #000;
-      padding: 1rem;
-      border-radius: 12px;
-      width: fit-content;
-      margin: 2rem auto;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 10px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .buttons a:hover {
+      background: #ffd54f;
     }
     footer {
-      margin-top: 3rem;
+      background-color: #ffecb3;
+      padding: 10px;
+      text-align: center;
       font-size: 0.9rem;
-      color: #333;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="trishul-logo.png" alt="KarmaFi Logo" />
+    <img src="https://karmafi.github.io/karmaFi-website/logo-trishul.png" alt="KarmaFi Logo">
     <h1>KarmaFi</h1>
-    <p class="tagline">Built on Trust. Driven by Vision.</p>
+    <p class="tagline">Empowering Karma with Crypto</p>
   </header>  <nav>
-    <a href="https://karmafi.github.io/karmaFi-website">Home</a>
-    <a href="#about">About</a>
-    <a href="#token">Token</a>
-    <a href="#whitepaper">Whitepaper</a>
-    <a href="https://pancakeswap.finance">PancakeSwap</a>
-    <a href="https://instagram.com/karmafitoken">Instagram</a>
-    <a href="https://t.me/boost?c=2856252981">Telegram</a>
-  </nav>  <div class="timer" id="countdown"></div>  <script>
-    const launchDate = new Date("2025-07-11T00:00:00Z").getTime();
-
-    const timer = document.getElementById("countdown");
+    <a href="#">Home</a>
+    <a href="https://www.instagram.com/karmafitoken" target="_blank">Instagram</a>
+    <a href="https://t.me/boost?c=2856252981" target="_blank">Telegram</a>
+    <a href="#">Whitepaper</a>
+    <a href="#">Token</a>
+    <a href="#">About</a>
+  </nav>  <div class="hero">
+    <h2>Launching Soon</h2>
+    <div class="countdown" id="countdown"></div>
+  </div>  <div class="vision">
+    <h2>Why KarmaFi? – Our Vision</h2>
+    <p>
+      KarmaFi is more than just a meme token — it's a movement. We created KarmaFi to inspire a new era of digital finance based on karma, trust, and the power of community. With every transaction, KarmaFi rewards the good, fuels growth, and builds a global ecosystem of believers.
+    </p>
+    <p>
+      <strong>Future Vision:</strong><br>
+      • Launch on major exchanges (PancakeSwap, CoinMarketCap)<br>
+      • Build our own KarmaPay wallet & mobile app<br>
+      • Develop NFT and Metaverse integration<br>
+      • Create a global payment system using KarmaFi<br>
+      • Support charity, innovation & clean energy tech
+    </p>
+    <p>
+      KarmaFi is for dreamers, believers, and doers. Let’s make crypto history — backed by karma, driven by purpose.
+    </p>
+  </div>  <div class="buttons">
+    <a href="https://pancakeswap.finance" target="_blank">Buy on PancakeSwap</a>
+    <a href="https://karmafi.github.io/karmaFi-website" target="_blank">Visit Website</a>
+  </div>  <footer>
+    © 2025 KarmaFi. All rights reserved.
+  </footer>  <script>
+    const countdown = document.getElementById('countdown');
+    const launchDate = new Date("July 11, 2025 10:00:00").getTime();
     const interval = setInterval(() => {
       const now = new Date().getTime();
       const distance = launchDate - now;
-
+      if (distance < 0) {
+        clearInterval(interval);
+        countdown.innerHTML = "KarmaFi is Live Now!";
+        return;
+      }
       const days = Math.floor(distance / (1000 * 60 * 60 * 24));
       const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      if (distance < 0) {
-        clearInterval(interval);
-        timer.innerHTML = "🚀 KarmaFi is now LIVE!";
-      } else {
-        timer.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s until launch`;
-      }
+      countdown.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s until launch`;
     }, 1000);
-  </script>  <footer>
-    &copy; 2025 KarmaFi. All rights reserved.
-  </footer>
-</body>
+  </script></body>
 </html>
